@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main(void)
+{
+    float number;
+    printf("Введите число с плавающей точкой: ");
+    scanf("%f", &number);
+    printf("Выводом является %.1f или %.1e\n", number, number);
+    printf("Выводом является %+.3f или %.3e\n", number, number);
+}

@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<float.h>
+int main(void)
+{
+    float number1 = 1.0 / 3.0;
+    double number2 = 1.0 / 3.0;
+    printf("float: %.4f; double: %.4f\n", number1, number2);
+    printf("float: %.12f; double: %.12f\n", number1, number2);
+    printf("float: %.17f; double: %.17f\n", number1, number2);
+    printf("%d %d", FLT_DIG, DBL_DIG);
+    return 0;
+}

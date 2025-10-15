@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main(void)
+{
+    float megabit, megabyte, download;
+    printf("Введите скорость загрузки и размер файла:");
+    scanf("%f %f", &megabit, &megabyte);
+    download = megabyte * 8 / megabit;
+    printf("При скорости загрузки %.2f мегабит в секунду файл размером %.2f мегабайт загружается за %f секунд(ы)\n", megabit, megabyte, download);
+    return 0;
+}

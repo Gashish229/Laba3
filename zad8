@@ -3,13 +3,14 @@ int main(void)
 {
     const float km_mile = 1.609;
     const float liters_gallon = 3.785;
-    float km, litres, km_litres, miles, bensin;
+    float km, litres, km_litres, miles, bensin, perevod;
     printf("Введите количество миль и количество бензина: ");
     scanf("%f %f", &miles, &bensin);
     printf("За один галлон бензина вы проехали: %.1f миль\n", miles / bensin);
     km = miles * km_mile;
     litres = bensin * liters_gallon;
-    printf("Для EU пользователей на одном литре бензина вы проедете: %.1f км\n", km / litres);
-    printf("Для EU пользователей на 100 литрах бензина вы проедете: %.1f км", 100 / km_litres);
+    perevod = (litres / km) * 100;
+    printf("Расход %.1f литров на 100 км", perevod);
     return 0;
 }
+
